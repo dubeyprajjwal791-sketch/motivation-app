@@ -189,3 +189,144 @@ A simple motivation app made with HTML, CSS and JavaScript.
 
 }
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Motivation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website / App Icon -->
+  <link rel="icon" href="logo.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      height: 100vh;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    /* Animated Background */
+    .bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #1e88e5, #673ab7, #009688, #ff9800);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 8px;
+      opacity: 0.9;
+      font-size: 15px;
+    }
+
+    /* Content Cards */
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .quote {
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg"></div>
+
+  <!-- Header -->
+  <header>
+    <!-- Apna logo upload karke naam "logo.png" rakho -->
+    <img src="logo.png" alt="Logo">
+    <h1>Daily Motivation</h1>
+    <p>Change your mindset. Change your life.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Welcome 🙏</h2>
+      <p>This is your personal space for positivity and motivation.</p>
+    </div>
+
+    <div class="card quote">
+      “Don’t stop when you’re tired. Stop when you’re done.”
+    </div>
+
+    <div class="card quote">
+      “Your limitation—it’s only your imagination.”
+    </div>
+
+    <div class="card quote">
+      “Great things never come from comfort zones.”
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Daily Motivation • All Rights Reserved
+  </footer>
+
+</body>
+</html>
