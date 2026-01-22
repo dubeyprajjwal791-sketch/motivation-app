@@ -107,4 +107,48 @@
   </footer>
 
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+    .box {
+      margin-top: 80px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>🔥 Welcome to My App Website 🔥</h1>
+    <p>Simple • Clean • Professional</p>
+
+    <div class="card">📱 Motivation App</div>
+    <div class="card">💡 Daily Quotes</div>
+    <div class="card">🚀 Fast & Lightweight</div>
+  </div>
+
+</body>
 </html>
+
